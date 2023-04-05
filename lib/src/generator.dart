@@ -1,7 +1,7 @@
 import 'dart:convert';
 import 'dart:typed_data' show Uint8List;
 import 'package:hex/hex.dart';
-import 'package:image/image.dart';
+import 'package:image_v3/image.dart';
 import 'package:gbk_codec/gbk_codec.dart';
 import 'package:flutter_esc_pos_utils/flutter_esc_pos_utils.dart';
 import 'commands.dart';
