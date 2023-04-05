@@ -1,4 +1,4 @@
-import 'package:flutter_esc_pos_utils/flutter_esc_pos_utils.dart';
+import 'package:flutter_esc_pos_utils_image_3/flutter_esc_pos_utils_image_3.dart';
 
 Future<List<int>> main() async {
   final profile = await CapabilityProfile.load();

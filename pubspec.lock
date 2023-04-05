@@ -126,11 +126,10 @@ packages:
   image_v3:
     dependency: "direct main"
     description:
-      path: "."
-      ref: HEAD
-      resolved-ref: "673041beb34ed5fd4a261e93815d73950639ad50"
-      url: "https://github.com/diantahoc/dart_image_3"
-    source: git
+      name: image_v3
+      sha256: dd9f790f2397dd243a74e606a57780e03e2fb67f372baf587e7780c37bd0258d
+      url: "https://pub.dev"
+    source: hosted
     version: "3.3.0"
   js:
     dependency: transitive
