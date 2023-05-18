@@ -21,4 +21,4 @@ dev_dependencies:
 
 flutter:
   assets:
-    - lib/resources/capabilities.json
+    - packages/flutter_esc_pos_utils_image_3/resources/capabilities.json
