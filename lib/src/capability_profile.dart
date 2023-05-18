@@ -1,5 +1,6 @@
 import 'dart:convert' show json;
 import 'package:flutter/services.dart' show rootBundle;
+import 'package:flutter_esc_pos_utils_image_3/src/capabilities.dart';
 
 class CodePage {
   CodePage(this.id, this.name);
@@ -12,8 +13,7 @@ class CapabilityProfile {
 
   /// Public factory
   static Future<CapabilityProfile> load({String name = 'default'}) async {
-    final content = await rootBundle.loadString('lib/resources/capabilities.json');
-    Map capabilities = json.decode(content);
+    Map capabilities = cMap;
 
     var profile = capabilities['profiles'][name];
 
@@ -45,8 +45,7 @@ class CapabilityProfile {
   }
 
   static Future<List<dynamic>> getAvailableProfiles() async {
-    final content = await rootBundle.loadString('lib/resources/capabilities.json');
-    Map capabilities = json.decode(content);
+    Map capabilities = cMap;
 
     var profiles = capabilities['profiles'];
 
